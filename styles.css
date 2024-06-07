@@ -1,0 +1,475 @@
+body {
+    margin: 0; /* Supprimer la marge par défaut du corps de la page */
+    overflow: hidden; /* Empêcher le débordement d'éléments en dehors du corps */
+}
+
+.conteneur {
+    background-color: #0d3066;
+    position: relative; /* Positionnement relatif pour que l'image soit positionnée par rapport à ce conteneur */
+    width: 100vw; /* Prendre la largeur complète de la fenêtre */
+    height: 100vh; /* Prendre la hauteur complète de la fenêtre */
+}
+
+
+.message-container {
+    width: 100%;
+    height: 5vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #009FED;
+    color: #fff;
+}
+
+.message {
+    color:aliceblue;
+    white-space: nowrap;
+    animation: scroll 40s linear infinite;
+    font-size: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+    top:5%;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(10%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+
+.logo-asten {
+    width: 30vh;
+    position: absolute; /* Positionnement absolu pour positionner l'image n'importe où à l'intérieur du conteneur */
+    bottom: 1vh; /* Positionner l'image en bas */
+    left: 5vh; /* Positionner l'image à droite */
+}
+
+.logo-asten img{
+    max-width: 100%; /* La largeur de l'image ne dépassera pas la largeur du conteneur */
+    max-height: 100%; /* La hauteur de l'image ne dépassera pas la hauteur du conteneur */
+    display: block; /* Supprime l'espace sous l'image */
+    margin: 0 auto;
+}
+
+.equipe {
+    width:40vh;
+    position: absolute; /* Positionnement absolu pour positionner l'image n'importe où à l'intérieur du conteneur */
+    bottom: 0; /* Positionner l'image en bas */
+    left: 155vh; /* Positionner l'image à droite */
+}
+
+.equipe img{
+    max-width: 100%; /* La largeur de l'image ne dépassera pas la largeur du conteneur */
+    max-height: 100%; /* La hauteur de l'image ne dépassera pas la hauteur du conteneur */
+    display: block; /* Supprime l'espace sous l'image */
+    margin: 0 auto;
+}
+
+.risques-container {
+    width:70vh;
+    height: 70vh;
+    position: absolute;
+    top: 8vh; /* Position en pixels depuis le haut */
+    left: 4vh; /* Position en pixels depuis la gauche */
+}
+
+.risques-container img {
+    max-width: 100%; /* La largeur de l'image ne dépassera pas la largeur du conteneur */
+    max-height: 100%; /* La hauteur de l'image ne dépassera pas la hauteur du conteneur */
+    display: block; /* Supprime l'espace sous l'image */
+    margin: 0 auto; /* Centre l'image horizontalement dans le conteneur */
+}
+
+.protections-container {
+    width: 80vh; /* Largeur souhaitée */
+    height: 80vh; /* Hauteur souhaitée */
+    position: absolute;
+    top: 14vh; /* Position en pixels depuis le haut */
+    left: 75vh; /* Position en pixels depuis la gauche */
+}
+
+.protections-container img {
+    position: absolute;
+    max-width: 100%; /* La largeur de l'image ne dépassera pas la largeur du conteneur */
+    max-height: 100%; /* La hauteur de l'image ne dépassera pas la hauteur du conteneur */
+    display: block; /* Supprime l'espace sous l'image */
+   
+}
+
+.collaborateurs-container {
+    width: 50vh; /* Largeur souhaitée */
+    height: 30vh; /* Hauteur souhaitée */
+    position: absolute;
+    top: 10vh; /* Position en pixels depuis le haut */
+    left: 150vh; /* Position en pixels depuis la gauche */
+    text-align: center;
+    display:block;
+}
+
+
+.collaborateurs {
+    color:aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+}
+
+.logo-container {
+    width: 40vh; /* Largeur souhaitée */
+    height: 40vh; /* Hauteur souhaitée */
+    position: absolute;
+    top: 85vh; /* Position en pixels depuis le haut */
+    left: 50vh; /* Position en pixels depuis la gauche */
+}
+
+.logo-container img {
+    max-width: 100%; /* La largeur de l'image ne dépassera pas la largeur du conteneur */
+    max-height: 100%; /* La hauteur de l'image ne dépassera pas la hauteur du conteneur */
+    display: block; /* Supprime l'espace sous l'image */
+    margin: 0 auto;
+}
+
+.plus{
+    width: 3vh;
+    height: 3vh;
+}
+
+.plus1 {
+    width: 5vh; /* Largeur souhaitée en pixels */
+    height: 5vh; /* Hauteur souhaitée en pixels */
+    position: relative;
+    top: 7vh; /* Position en pixels depuis le haut */
+    left: 38vh; /* Position en pixels depuis la gauche */
+    cursor: pointer;
+    z-index: 0;
+}
+
+.plus2 {
+    width: 5vh; /* Largeur souhaitée en pixels */
+    height: 5vh; /* Hauteur souhaitée en pixels */
+    position: relative;
+    top: 52vh; /* Position en pixels depuis le haut */
+    left: 38vh; /* Position en pixels depuis la gauche */
+    cursor: pointer;   
+    z-index: 0;
+}
+
+.plus3 {
+    width: 5vh; /* Largeur souhaitée en pixels */
+    height: 5vh; /* Hauteur souhaitée en pixels */
+    position: relative;
+    top: 18vh; /* Position en pixels depuis le haut */
+    left: 16vh; /* Position en pixels depuis la gauche */
+    cursor: pointer;
+    z-index: 0;
+}
+
+.plus4 {
+    width: 5vh; /* Largeur souhaitée en pixels */
+    height: 5vh; /* Hauteur souhaitée en pixels */
+    position: relative;
+    top: 40vh; /* Position en pixels depuis le haut */
+    left: 16vh; /* Position en pixels depuis la gauche */
+    cursor: pointer;
+    z-index: 0;
+}
+
+.plus5 {
+    width: 5vh; /* Largeur souhaitée en pixels */
+    height: 5vh; /* Hauteur souhaitée en pixels */
+    position: relative;
+    top: 18vh; /* Position en pixels depuis le haut */
+    left: 58vh; /* Position en pixels depuis la gauche */
+    cursor: pointer;
+    z-index: 0;
+}
+
+.plus6 {
+    cursor: pointer;
+    width: 5vh; /* Largeur souhaitée en pixels */
+    height: 5vh; /* Hauteur souhaitée en pixels */
+    position: relative;
+    top: 41vh; /* Position en pixels depuis le haut */
+    left: 57vh; /* Position en pixels depuis la gauche */
+    z-index: 0;
+}
+
+.image1 {
+    width: 80%;
+    visibility: visible;
+    position: absolute;
+    top: 23vh; /* Position en pixels depuis le haut */
+    left: 8vh; /* Position en pixels depuis la gauche */
+    z-index: 1;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+.image2 {
+    width: 60%;
+    visibility: visible;
+    position: absolute ;
+    top: 0vh; /* Position en pixels depuis le haut */
+    left: 15vh; /* Position en pixels depuis la gauche */
+    z-index: 1;
+}
+
+.image3 {
+    width: 80vh;
+    visibility: visible;
+    position: absolute;
+    top: 0vh; /* Position en pixels depuis le haut */
+    left: 5vh; /* Position en pixels depuis la gauche */
+    z-index: 1;
+}
+
+.image4 {
+    width: 120%;
+    height: 50vh;
+    visibility: visible;
+    position: absolute;
+    top: 0vh; /* Position en pixels depuis le haut */
+    left: 0vh; /* Position en pixels depuis la gauche */
+    z-index: 1;
+}
+
+.image5 {
+    width: 90%;
+    visibility: visible;
+    position: absolute;
+    top: 34vh; /* Position en pixels depuis le haut */
+    left: 3vh; /* Position en pixels depuis la gauche */
+    z-index: 1;
+}
+
+.image6 {
+    width: 90%;
+    visibility: visible;
+    position: absolute;
+    top: 2vh; /* Position en pixels depuis le haut */
+    left: 5vh; /* Position en pixels depuis la gauche */
+    z-index: 1;
+}
+
+
+
+
+/* Ajoutez des media queries pour les écrans plus petits (téléphones) */
+@media screen and (max-width: 768px) {
+    
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    body {
+        overflow: hidden; /* Empêcher le débordement d'éléments en dehors du corps */
+        background-color: #0d3066;
+    }
+    
+    .conteneur {
+        position: relative; /* Positionnement relatif pour que l'image soit positionnée par rapport à ce conteneur */
+    }
+
+      
+    .risques-container {
+        width:40vh;
+        height: 100%;
+        position: absolute;
+        top: 90vh; /* Position en pixels depuis le haut */
+        left: 3vh; /* Position en pixels depuis la gauche */
+    }
+    
+    .risques-container img {
+        max-width: 100%; /* La largeur de l'image ne dépassera pas la largeur du conteneur */
+        max-height: 100%; /* La hauteur de l'image ne dépassera pas la hauteur du conteneur */
+        display: block; /* Supprime l'espace sous l'image */
+        margin: 0 auto; /* Centre l'image horizontalement dans le conteneur */
+    }
+    
+    .protections-container {
+        width: 48vh; /* Largeur souhaitée */
+        height: 200%; /* Hauteur souhaitée */
+        position: absolute;
+        top: 38vh; /* Position en pixels depuis le haut */
+        left: -0.5vh; /* Position en pixels depuis la gauche */
+    }
+    
+    .protections-container img {
+        position: absolute;
+        max-width: 100%; /* La largeur de l'image ne dépassera pas la largeur du conteneur */
+        max-height: 100%; /* La hauteur de l'image ne dépassera pas la hauteur du conteneur */
+        display: block; 
+       
+    }
+
+    .collaborateurs-container {
+        width: 95%; /* Largeur souhaitée */
+        height: 10vh; /* Hauteur souhaitée */
+        position: absolute;
+        top: 4vh; /* Position en pixels depuis le haut */
+        right: 1vh; /* Position en pixels depuis la gauche */
+        left: 1vh;
+        text-align: center;
+    }
+        
+    .collaborateurs {
+        color:aliceblue;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.3vh;
+    }
+
+    .message-container {
+        width: 100%;
+        height: 3vh;
+        overflow: hidden;
+        position: relative;
+        background-color: #009FED;
+        color: #fff;
+    }
+    
+    .message {
+        color:aliceblue;
+        white-space: nowrap;
+        animation: scroll 40s linear infinite;
+        font-size: 2vh;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+
+    .logo-asten {
+        width: 15vh; /* Largeur souhaitée */
+        height: 100%; /* Hauteur souhaitée */
+        position: absolute;
+        top: 32vh; /* Position en pixels depuis le haut */
+        left: 5vh; /* Position en pixels depuis la gauche */
+    }
+    
+    .logo-asten img {
+        max-width: 100%; /* La largeur de l'image ne dépassera pas la largeur du conteneur */
+        max-height: 100%; /* La hauteur de l'image ne dépassera pas la hauteur du conteneur */
+        display: block; /* Supprime l'espace sous l'image */
+        margin: 0 auto;
+    }
+    
+  
+    .plus1 {
+        width: 3vh; /* Largeur souhaitée en pixels */
+        height: 3vh; /* Hauteur souhaitée en pixels */
+        position: absolute;
+        top: 4vh; /* Position en pixels depuis le haut */
+        left: 23vh; /* Position en pixels depuis la gauche */
+        cursor: pointer;
+    }
+    
+    .plus2 {
+        width: 3vh; /* Largeur souhaitée en pixels */
+        height: 3vh; /* Hauteur souhaitée en pixels */
+        position: absolute;
+        top: 31vh; /* Position en pixels depuis le haut */
+        left: 23vh; /* Position en pixels depuis la gauche */
+        cursor: pointer;    
+    }
+    
+    .plus3 {
+        width: 3vh; /* Largeur souhaitée en pixels */
+        height: 3vh; /* Hauteur souhaitée en pixels */
+        position: absolute;
+        top: 11vh; /* Position en pixels depuis le haut */
+        left: 10vh; /* Position en pixels depuis la gauche */
+        cursor: pointer;
+    }
+    
+    .plus4 {
+        width: 3vh; /* Largeur souhaitée en pixels */
+        height: 3vh; /* Hauteur souhaitée en pixels */
+        position: absolute;
+        top: 24vh; /* Position en pixels depuis le haut */
+        left: 10vh; /* Position en pixels depuis la gauche */
+        cursor: pointer;
+    }
+    
+    .plus5 {
+        width: 3vh; /* Largeur souhaitée en pixels */
+        height: 3vh; /* Hauteur souhaitée en pixels */
+        position: absolute;
+        top: 11vh; /* Position en pixels depuis le haut */
+        left: 35vh; /* Position en pixels depuis la gauche */
+        cursor: pointer;
+    }
+    
+    .plus6 {
+        cursor: pointer;
+        width: 3vh; /* Largeur souhaitée en pixels */
+        height: 3vh; /* Hauteur souhaitée en pixels */
+        position: absolute;
+        top: 24.5vh; /* Position en pixels depuis le haut */
+        left: 35vh; /* Position en pixels depuis la gauche */
+    }
+    
+    .image1 {
+        width: 80%;
+        visibility: visible;
+        position: relative;
+        top: 14vh; /* Position en pixels depuis le haut */
+        left: 4vh; /* Position en pixels depuis la gauche */
+        z-index: 1;
+    }
+    
+    .hidden {
+        visibility: hidden;
+    }
+    
+    
+    .image2 {
+        width: 50%;
+        visibility: visible;
+        position: relative;
+        top: 43vh; /* Position en pixels depuis le haut */
+        left: 3vh; /* Position en pixels depuis la gauche */
+        z-index: 1;
+    }
+    
+    .image3 {
+        width: 90%;
+        visibility: visible;
+        position: relative;
+        top: 21vh; /* Position en pixels depuis le haut */
+        left: 2vh; /* Position en pixels depuis la gauche */
+        z-index: 1;
+    }
+    
+    .image4 {
+        width: 90%;
+        height : 30vh;
+        visibility: visible;
+        position: absolute;
+        top: 37vh; /* Position en pixels depuis le haut */
+        left: 2vh; /* Position en pixels depuis la gauche */
+        z-index: 1;
+    }
+    
+    .image5 {
+        width: 90%;
+        visibility: visible;
+        position: relative;
+        top: 20vh; /* Position en pixels depuis le haut */
+        left: 2vh; /* Position en pixels depuis la gauche */
+        z-index: 1;
+    }
+    
+    .image6 {
+        width: 90%;
+        visibility: visible;
+        position: relative;
+        top: 36vh; /* Position en pixels depuis le haut */
+        left: 2vh; /* Position en pixels depuis la gauche */
+        z-index: 1;
+    }
+   
+}
